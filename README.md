@@ -43,7 +43,7 @@ The **CID is stored on a smart contract** deployed on a **private blockchain (Ga
 - **Blockchain**: Ethereum, Ganache, Solidity, Truffle  
 - **Biometric Models**:  
   - **Face Recognition**: ArcFace  
-  - **Fingerprint Recognition**: Minutiae-based approach  
+  - **Fingerprint Recognition**: Saimese Network  
 - **Cryptography**: AES-256 Encryption  
 - **Storage**: Pinata IPFS (InterPlanetary File System)  
 - **Smart Contracts**: Solidity (Executed via Web3.py)  

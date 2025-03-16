@@ -46,16 +46,15 @@ The **CID is stored on a smart contract** deployed on a **private blockchain (Ga
   - **Fingerprint Recognition**: Saimese Network  
 - **Cryptography**: AES-256 Encryption  
 - **Storage**: Pinata IPFS (InterPlanetary File System)  
-- **Smart Contracts**: Solidity (Executed via Web3.py)  
-- **Libraries**: OpenCV, NumPy, PyCryptodome, Web3.py, Truffle  
-
+- **Smart Contracts**: Solidity (Executed via Remix IDE)  
+- **Libraries**: OpenCV, NumPy, Tensorflow, PyCryptodome, Web3, Truffle  
+- ArcFace Model Download Link : https://huggingface.co/felixrosberg/ArcFace/blob/main/ArcFacePerceptual-Res50.h5
 ---
 
 ## 📌 Installation Guide
 ### 🔹 Prerequisites
 Ensure the following are installed on your system:
 - **Python 3.8+**
-- **Node.js & npm**
 - **Ganache** (For local blockchain setup)
 - **Truffle** (For smart contract deployment)
 - **MetaMask** (For Ethereum wallet integration)
@@ -73,18 +72,24 @@ source env/bin/activate  # On Windows use `env\Scripts\activate`
 ```
 3️⃣ Install Dependencies
 ```bash
-pip install -r requirements.txt
+pip install opencv-pyhton
+pip install numpy
+pip install tensorflow==2.14
+pip install web3
+pip install PyCrytodome
 ```
 4️⃣ Start Ganache Blockchain
 
 Open Ganache and create a new workspace.
-Set the network port to 8545 (Ensure it matches Web3 settings).
+Set the network port to 8545 .
 
 5️⃣ Compile & Deploy Smart Contracts
 ```
 truffle compile
 truffle migrate --reset
 ```
+Instead use Remix IDE to compile and Deploy.
+
 6️⃣ Run the Authentication System
 ```
 python app.py
